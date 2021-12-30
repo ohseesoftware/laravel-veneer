@@ -1,0 +1,14 @@
+{
+    "notification": {
+        "type": "change",
+        "changes_since": "2021-12-06T09:24:16Z"
+    },
+    "channel": {
+        "channel_id": "chn_0000000000",
+        "callback_url": "https://example.com/callback",
+        "filters": {
+            "calendar_ids": ["cal_0000000000"],
+            "only_managed": false
+        }
+    }
+}
