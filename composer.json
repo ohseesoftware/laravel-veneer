@@ -27,8 +27,7 @@
         "mockery/mockery": "^1.4",
         "orchestra/testbench": "^6.7",
         "php-coveralls/php-coveralls": "^2.4",
-        "phpunit/phpunit": "^9.5",
-        "squizlabs/php_codesniffer": "*"
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
