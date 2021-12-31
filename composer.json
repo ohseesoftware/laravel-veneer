@@ -18,9 +18,9 @@
     ],
     "require": {
         "php": ">=8.0",
-        "illuminate/contracts": "^8.77",
-        "illuminate/support": "^8.77",
-        "illuminate/testing": "^8.77"
+        "illuminate/contracts": "^8.0",
+        "illuminate/support": "^8.0",
+        "illuminate/testing": "^8.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.4",

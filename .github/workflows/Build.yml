@@ -5,14 +5,12 @@ jobs:
         name: Test
         runs-on: ubuntu-18.04
         steps:
-            - uses: actions/checkout@master
+            - uses: actions/checkout@v2
             - name: Checkout
               if: github.ref == 'refs/heads/master'
               run: git checkout "${GITHUB_REF:11}"
             - name: Composer Install
               run: composer install
-            - name: PHPCS
-              run: ./vendor/bin/phpcs src tests
             - name: Run Tests
               run: ./vendor/bin/phpunit
     release:
@@ -22,7 +20,7 @@ jobs:
         runs-on: ubuntu-18.04
         steps:
             - name: Checkout
-              uses: actions/checkout@v1
+              uses: actions/checkout@v2
             - name: Setup Node.js
               uses: actions/setup-node@v1
               with:
