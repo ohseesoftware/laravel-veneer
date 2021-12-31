@@ -1,24 +1,24 @@
 <?php
 
-namespace OhSeeSoftware\LaravelVeneer\Tests\Providers\Cronofy;
+namespace OhSeeSoftware\LaravelVeneer\Tests\Providers\Cronofy\Calendars;
 
 use Illuminate\Support\Arr;
 use OhSeeSoftware\LaravelVeneer\Fixtures\FixtureData;
-use OhSeeSoftware\LaravelVeneer\Providers\Cronofy\CreateChannelMock;
+use OhSeeSoftware\LaravelVeneer\Providers\Cronofy\Calendars\CreateCalendarMock;
 use OhSeeSoftware\LaravelVeneer\Tests\TestCase;
 use OhSeeSoftware\LaravelVeneer\Traits\VeneerMocks;
 
-class CreateChannelMockTest extends TestCase
+class CreateCalendarMockTest extends TestCase
 {
     use VeneerMocks;
 
-    private CreateChannelMock $mock;
+    private CreateCalendarMock $mock;
 
     public function setUp(): void
     {
         parent::setUp();
 
-        $this->mock = new CreateChannelMock();
+        $this->mock = new CreateCalendarMock();
     }
 
     /** @test */
@@ -26,6 +26,6 @@ class CreateChannelMockTest extends TestCase
     {
         $fixture = FixtureData::load($this->mock->fixturePath());
 
-        $this->assertEquals('chn_0000000000', Arr::get($fixture, 'channel.channel_id'));
+        $this->assertEquals('cal_000000', Arr::get($fixture, 'calendar.calendar_id'));
     }
 }

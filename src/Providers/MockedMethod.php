@@ -8,14 +8,17 @@ use OhSeeSoftware\LaravelVeneer\Fixtures\FixtureData;
 
 abstract class MockedMethod
 {
-    abstract public function fixturePath(): string;
-
     abstract public function method(): string;
 
     protected $withArgs;
     protected $result;
     protected array $merges = [];
     protected int $times = 1;
+
+    public function fixturePath(): ?string
+    {
+        return null;
+    }
 
     public static function make(): self
     {
@@ -42,7 +45,12 @@ abstract class MockedMethod
             return $this->result;
         }
 
-        $result = FixtureData::load($this->fixturePath());
+        $fixturePath = $this->fixturePath();
+        if (!$fixturePath) {
+            return;
+        }
+
+        $result = FixtureData::load($fixturePath);
 
         foreach ($this->merges as $merge) {
             Arr::set($result, $merge[0], $merge[1]);

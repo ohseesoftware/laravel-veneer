@@ -1,0 +1,16 @@
+{
+    "calendars": [
+        {
+            "provider_name": "google",
+            "profile_id": "pro_000000",
+            "profile_name": "example@cronofy.com",
+            "calendar_id": "cal_000000",
+            "calendar_name": "Home",
+            "calendar_readonly": false,
+            "calendar_deleted": false,
+            "calendar_primary": true,
+            "calendar_integrated_conferencing_available": true,
+            "permission_level": "sandbox"
+        }
+    ]
+}

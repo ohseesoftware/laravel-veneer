@@ -1,0 +1,12 @@
+{
+    "channels": [
+        {
+            "channel_id": "chn_0000000000",
+            "callback_url": "https://example.com/callback",
+            "filters": {
+                "calendar_ids": ["cal_000000000"],
+                "only_managed": false
+            }
+        }
+    ]
+}
