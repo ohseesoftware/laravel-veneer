@@ -10,6 +10,9 @@ abstract class MockProvider
 {
     use InteractsWithContainer;
 
+    /**
+     * FQDN of the class being mocked.
+     */
     abstract public function mockedClass(): string;
 
     protected ?Application $app;

@@ -8,17 +8,18 @@ use OhSeeSoftware\LaravelVeneer\Fixtures\FixtureData;
 
 abstract class MockedMethod
 {
+    /**
+     * Name of the method being mocked.
+     */
     abstract public function method(): string;
 
     protected $withArgs;
-    protected $result;
-    protected array $merges = [];
-    protected int $times = 1;
 
-    public function fixturePath(): ?string
-    {
-        return null;
-    }
+    protected $result;
+
+    protected array $merges = [];
+
+    protected int $times = 1;
 
     public static function make(): self
     {
@@ -34,6 +35,16 @@ abstract class MockedMethod
         }
 
         $expected->times($this->times)->andReturn($this->result());
+    }
+
+    /**
+     * Path to the fixture data file, if applicable.
+     *
+     * The value should be a relative path from the `fixtures` directory.
+     */
+    public function fixturePath(): ?string
+    {
+        return null;
     }
 
     /**
