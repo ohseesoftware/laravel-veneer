@@ -1,0 +1,21 @@
+{
+    "profiles": [
+        {
+            "provider_name": "google",
+            "provider_service": "gsuite",
+            "profile_id": "pro_00000",
+            "profile_name": "example1@cronofy.com",
+            "profile_connected": true,
+            "profile_initial_sync_required": false
+        },
+        {
+            "provider_name": "exchange",
+            "provider_service": "office365",
+            "profile_id": "pro_00001",
+            "profile_name": "example2@cronofy.com",
+            "profile_connected": false,
+            "profile_initial_sync_required": false,
+            "profile_relink_url": "https://app.cronofy.com/relink/apple?email=example@cronofy.com"
+        }
+    ]
+}
