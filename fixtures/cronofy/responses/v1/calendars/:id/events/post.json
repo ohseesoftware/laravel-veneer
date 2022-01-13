@@ -1,0 +1,10 @@
+{
+    "event_id": "00000",
+    "summary": "Board meeting",
+    "description": "Discuss plans for the next quarter.",
+    "start": "2022-01-15T15:30:00Z",
+    "end": "2022-01-15T17:00:00Z",
+    "location": {
+        "description": "Board room"
+    }
+}

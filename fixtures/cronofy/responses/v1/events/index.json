@@ -1,0 +1,45 @@
+{
+    "pages": {
+        "current": 1,
+        "total": 2,
+        "next_page": "https://api.cronofy.com/v1/events/pages/08a07b034306679e"
+    },
+    "events": [
+        {
+            "calendar_id": "cal_00000",
+            "event_uid": "evt_external_00000",
+            "summary": "Company Retreat",
+            "description": "",
+            "start": "2014-09-06",
+            "end": "2014-09-08",
+            "deleted": false,
+            "created": "2022-01-14T08:00:01Z",
+            "updated": "2022-01-14T09:24:16Z",
+            "location": {
+                "description": "Beach"
+            },
+            "participation_status": "needs_action",
+            "attendees": [
+                {
+                    "email": "example@cronofy.com",
+                    "display_name": "Example Person",
+                    "status": "needs_action"
+                }
+            ],
+            "organizer": {
+                "email": "example@cronofy.com",
+                "display_name": "Example Person"
+            },
+            "transparency": "opaque",
+            "status": "confirmed",
+            "categories": [],
+            "recurring": false,
+            "event_private": false,
+            "options": {
+                "delete": true,
+                "update": true,
+                "change_participation_status": true
+            }
+        }
+    ]
+}
